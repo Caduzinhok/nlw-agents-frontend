@@ -28,9 +28,9 @@ export function RoomList(){
               {
                 data?.map(room => {
                   return (
-                    <Link key={room.id} className='flex items-center justify-between p-3 rounded-lg border hover:bg-accent/50' to={`/room/${room.id}`}>
+                    <Link key={room.id} className='flex border items-center justify-between p-3 rounded-lg  hover:bg-accent/50' to={`/room/${room.id}`}>
 
-                      <div className='flex-1 flex flex-col gap-1'>
+                      <div className='flex flex-1 flex-col gap-1'>
                         <h3 className='font-medium'>
                           {room.name}
                         </h3>
